@@ -1,5 +1,3 @@
-//Programa: Teclado e Mouse com o Arduino Leonardo
-//Alteracoes e adaptacoes: Arduino e Cia
 #include <Keyboard.h>
 #include <Mouse.h>
 //Pino do push-button
@@ -38,7 +36,7 @@ void loop()
   int valor = digitalRead(botao_msg);
   if ((valor != previousButtonState) && (valor == LOW)) 
   {
-    Keyboard.println("Arduino e Cia !");
+    Keyboard.println("Autocore");
   }
   //Salva o estado do botao para comparacao no proximo loop
   previousButtonState = valor;
